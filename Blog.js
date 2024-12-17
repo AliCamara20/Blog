@@ -72,8 +72,11 @@ const data =
                 console.log('data stored')
         }
         else console.log('data already exists');
-
+          for(let i = 0; i < blogs.length; i++){
+                  blogs[i].liked = false;
+          }
         const blogs = getComments();
+  
         console.log(blogs);
         blogs.forEach(displayBlogs);
 
