@@ -67,7 +67,7 @@ const data =
                     
             }
         ];
-        if(!localStorage.getItem('comments'){
+        if(!localStorage.getItem('comments')){
                 saveComments();
                 console.log('data stored')
         }
