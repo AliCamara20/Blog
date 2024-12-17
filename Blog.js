@@ -10,7 +10,7 @@ const comment_box = document.querySelector('.comment-section');
 const blogContainer = document.querySelector(".blogs-container");
 const subscriptionForm = document.getElementById('sub-form');
 const mini_container = document.querySelector('.blog-container'); 
-console.log(mini_container)
+
 const emails = getEmails();
         
 const data = 
@@ -48,7 +48,7 @@ const data =
                     qui ullam modi reprehenderit rerum dolor, laudantium quam temporibus id
                 `,
                 
-                replies: [{replier: 'Ali', date: formatTme(), repImg: 'venono.jpg', reply: 'Nice Keffieh'}]
+                replies: [{replier: 'Ali', date: formatTme(), repImg: 'venono.jpeg', reply: 'Nice Keffieh'}]
             },
 
             {id: 3, title: 'title heading', titleDesc: 'Title description, Jan 17, 2023', img: 'milan.jpg', 
@@ -74,11 +74,7 @@ const data =
         else console.log('data already exists');
           
         const blogs = getComments();
-        for(let i = 0; i < data.length; i++){
-          data[i].liked = false;
-          saveComments();
-          console.log((`${data[i + 1].id}: ${data[i].liked}`)      
-        }
+        
         console.log(blogs);
         blogs.forEach(displayBlogs);
 
