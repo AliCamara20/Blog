@@ -74,6 +74,7 @@ const data =
         else console.log('data already exists');
 
         const blogs = getComments();
+        console.log(blogs);
         blogs.forEach(displayBlogs);
 
         function saveComments(){
@@ -95,11 +96,6 @@ const data =
             const subscriptionEmail = localStorage.getItem('emails') || '[]';
             return JSON.parse(subscriptionEmail);
         }
-
-        subscriptionForm.addEventListener('submit', function(e){
-            e.preventDefault();
-            addEmail();
-        })
 
         function addEmail(){
             let subscriber = document.getElementById('email').value;
@@ -292,24 +288,7 @@ const data =
             }
         }
         
-        closeBtn.addEventListener("click", () => {
-            comment_box.style.display = "none";
-        })
-
-        form.addEventListener("submit", function(e){
-            comment_box.style.display = "none"; 
-            e.preventDefault();
-        })
-
-        close_btn.addEventListener("click", close);
-
-        function close(){
-           subscription_modal.style.display = "none";
-        }
         
-        Array.from(sub_btns).forEach(sub_btn => sub_btn.addEventListener("click", function(){
-            subscription_modal.style.display = "block";
-        }));
         
 
         function formatTme(date){
