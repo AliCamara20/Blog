@@ -1,20 +1,19 @@
 const commentBtn = document.querySelectorAll(".comment-btn");
-        const closeBtn = document.querySelector("#close");
-        const form = document.querySelector("#form");
-        const subscription_modal = document.querySelector(".sub-modalContainer");
-        const close_btn = document.querySelector(".close");
-        const sub_btns = document.querySelectorAll(".subscribe");
-        const link_btn = document.querySelectorAll(".likeBtn");
-        const replyBtns = document.querySelectorAll(".replies");
-        const comment_box = document.querySelector('.comment-section');
-        const blogContainer = document.querySelector(".blogs-container");
-        const subscriptionForm = document.getElementById('sub-form');
-        const mini_container = document.querySelector('.blog-container'); 
-        console.log(mini_container)
-        const emails = getEmails();
-        const blogs = getComments();
-        /*
-
+const closeBtn = document.querySelector("#close");
+const form = document.querySelector("#form");
+const subscription_modal = document.querySelector(".sub-modalContainer");
+const close_btn = document.querySelector(".close");
+const sub_btns = document.querySelectorAll(".subscribe");
+const link_btn = document.querySelectorAll(".likeBtn");
+const replyBtns = document.querySelectorAll(".replies");
+const comment_box = document.querySelector('.comment-section');
+const blogContainer = document.querySelector(".blogs-container");
+const subscriptionForm = document.getElementById('sub-form');
+const mini_container = document.querySelector('.blog-container'); 
+console.log(mini_container)
+const emails = getEmails();
+        
+const data = 
         [
             {id: 0, title: 'title heading', titleDesc: 'Title description, May 1, 2021', img: 'Timeless.webp', 
                 about: `Clothes ipsumLorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -68,8 +67,13 @@ const commentBtn = document.querySelectorAll(".comment-btn");
                     
             }
         ];
-        */
-       
+        if(!localStorage.getItem('comments'){
+                saveComments();
+                console.log('data stored')
+        }
+        else console.log('data already exists');
+
+        const blogs = getComments();
         blogs.forEach(displayBlogs);
 
         function saveComments(){
