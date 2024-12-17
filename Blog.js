@@ -72,7 +72,13 @@ const data =
                 console.log('data stored')
         }
         else console.log('data already exists');
-          
+
+        for(let i = 0; i < data.length; i++){
+                if(!data[i].liked){
+                        data[i].liked = false;
+                        saveComments();
+                }
+        }
         const blogs = getComments();
         
         console.log(blogs);
