@@ -241,7 +241,9 @@ const data =
         }
         
         function addComment(blogId){
-            comment_box.style.display = 'block';
+            comment_box.style.display = 'flex';
+            comment_box.style.justifyContent = 'center';
+            comment_box.style.alignItems = 'center';
             console.log(blogId);
             let image = ['d2.jpeg', 'free.png', 'free2.avif', 'venono.jpeg', 'Chris-Williamson.jpeg',  ];
             let nextImage = Math.floor(Math.random() * image.length)
