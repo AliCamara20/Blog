@@ -48,7 +48,7 @@ const data =
                     qui ullam modi reprehenderit rerum dolor, laudantium quam temporibus id
                 `,
                 
-                replies: [{replier: 'Ali', date: formatTme(), repImg: 'katim the coder.jpg', reply: 'Nice Keffieh'}]
+                replies: [{replier: 'Ali', date: formatTme(), repImg: 'venono.jpg', reply: 'Nice Keffieh'}]
             },
 
             {id: 3, title: 'title heading', titleDesc: 'Title description, Jan 17, 2023', img: 'milan.jpg', 
@@ -77,6 +77,7 @@ const data =
         for(let i = 0; i < data.length; i++){
           data[i].liked = false;
           saveComments();
+          console.log((`${data[i + 1].id}: ${data[i].liked}`)      
         }
         console.log(blogs);
         blogs.forEach(displayBlogs);
@@ -122,7 +123,7 @@ const data =
             comments.appendChild(divider);
             let addCommentBtn = document.createElement('span');
             addCommentBtn.innerHTML = `<button class="comment-btn" onclick = 'addComment(${element.id})'>Add Comment</button>`
-            console.log(comments);
+            
 
             blog.innerHTML = `
             <div class ='container'>
