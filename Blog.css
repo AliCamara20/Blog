@@ -50,22 +50,22 @@ header{
 }
 
 .hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    display: block;
 }
 .hero_img{
     width: 100%;
-    grid-column: 1 / -1;
-    grid-row: 1/ -1;
+    height: auto;
 }
 
 
 
 
 .hero_text{
-    grid-column: 1/ -1;
-    grid-row: 2 / 3;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
 }
 
 .hero_text h1{
