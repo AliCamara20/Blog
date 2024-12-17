@@ -51,6 +51,8 @@ header{
 
 .hero{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .hero_img{
     width: 100%;
@@ -62,8 +64,8 @@ header{
 
 
 .hero_text{
-    grid-column: 1/ -1;
-    grid-row: 1 / -1;
+    grid-column: 1/ 2;
+    grid-row: 2 / 3;
 }
 
 .hero_text h1{
