@@ -77,7 +77,7 @@ const data =
         blogs.forEach(displayBlogs);
 
         function saveComments(){
-            const blogJson = JSON.stringify(blogs);
+            const blogJson = JSON.stringify(data);
             localStorage.setItem('comments', blogJson);
         }
 
