@@ -210,8 +210,12 @@ hr{
         color: #fff;
         font-size: 1rem;
     }
-    .nav a + .nav a{
+    .nav a i + .nav a i{
         margin-left: 1em;
+    }
+
+    .nav a i{
+        font-size: 1.3rem; 
     }
     .comment{
         display: flex;
