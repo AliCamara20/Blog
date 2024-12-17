@@ -250,6 +250,7 @@ const data =
             
             form.onsubmit = function(e){
                 e.preventDefault();
+                comment_box.style.display = 'none';    
                 let commentor = document.getElementById('nameValue').value;
                 let message = document.getElementById('message').value;
                 if(message === '' || commentor === '') alert('Enter  both name and message');
@@ -298,7 +299,7 @@ const data =
         }
 
          close_btn.addEventListener('click', () =>{
-                 comment_box.style.display = none;
+                 comment_box.style.display = 'none';
          })
         function formatTme(date){
             date  = new Date();
