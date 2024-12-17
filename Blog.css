@@ -205,6 +205,14 @@ hr{
     .search{
         margin-left: auto;
     }
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+    .nav a + .nav a{
+        margin-left: 1em;
+    }
     .comment{
         display: flex;
     }
