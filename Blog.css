@@ -164,6 +164,7 @@ header{
     width: 90%;
     margin:  0 auto;
     row-gap: 50px;
+    position: relative;
 }
 
 
@@ -185,7 +186,15 @@ hr{
     opacity: .7;
     
 }
-
+comment-btn{
+    background: #000;
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
 .comment-section{
     position: fixed;
     top: 0;
@@ -211,6 +220,7 @@ hr{
     display: block;
     margin-bottom: 1.1em;
     outline: none;
+    width: 100%;
 }
 #form input[type = 'submit']{
     width: 100%;
@@ -232,6 +242,9 @@ textarea{
     background: #000;
     color: #fff;
     font-size: 1.5rem;
+}
+.form_header{
+    text-align: center;
 }
 @media (min-width: 800px){
     .hero_text .name_tag{
@@ -268,7 +281,13 @@ textarea{
     .comment{
         display: flex;
     }
-
+    .reply{
+        margin-left: 2em;
+        
+    }
+    .reply h4{
+        margin-top: 0;
+    }
     
 
 
