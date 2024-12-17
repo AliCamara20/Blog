@@ -74,10 +74,11 @@ const data =
         else console.log('data already exists');
 
         for(let i = 0; i < data.length; i++){
-                if(!data[i].liked){
+                if(!data[i].liked === 'undefined'){
                         data[i].liked = false;
                         saveComments();
                 }
+                else console.log('blogs already has a like property')
         }
         const blogs = getComments();
         
@@ -285,7 +286,7 @@ const data =
 
                             comments[blogId].appendChild(comment);
                             
-                            replies.innerText = blog.replies.length;
+                            //replies.innerText = blog.replies.length;
                             saveComments();
 
                             
