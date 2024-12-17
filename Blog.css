@@ -189,11 +189,11 @@ hr{
 .comment-btn{
     background: #000;
     color: #fff;
-    padding: .5em 1em;
+    padding: .2em 1em;
     font-size: 1rem;
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 12px;
 }
 .comment-section{
     position: fixed;
