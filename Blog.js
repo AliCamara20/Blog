@@ -74,8 +74,8 @@ const data =
         else console.log('data already exists');
           
         const blogs = getComments();
-        for(let i = 0; i < blogs.length; i++){
-          blogs[i].liked = false;
+        for(let i = 0; i < data.length; i++){
+          data[i].liked = false;
           saveComments();
         }
         console.log(blogs);
