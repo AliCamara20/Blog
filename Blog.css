@@ -185,6 +185,19 @@ hr{
     
 }
 
+.comment-section{
+    width: 100%;
+    height: 100dvh;
+    background: rgb(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    background: #fff;
+    padding: 1em;
+    position: relative;
+}
 @media (min-width: 800px){
     .hero_text .name_tag{
         font-size: 3rem;
