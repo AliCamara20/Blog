@@ -2,7 +2,7 @@ const commentBtn = document.querySelectorAll(".comment-btn");
 const closeBtn = document.querySelector("#close");
 const form = document.querySelector("#form");
 const subscription_modal = document.querySelector(".sub-modalContainer");
-const close_btn = document.querySelector(".close");
+const close_btn = document.querySelector(".close_btn");
 const sub_btns = document.querySelectorAll(".subscribe");
 const link_btn = document.querySelectorAll(".likeBtn");
 const replyBtns = document.querySelectorAll(".replies");
@@ -296,10 +296,10 @@ const data =
                 
             }
         }
-        
-        
-        
 
+         close_btn.addEventListener('click', () =>{
+                 comment_box.style.display = none;
+         })
         function formatTme(date){
             date  = new Date();
             let day = date.toDateString();
