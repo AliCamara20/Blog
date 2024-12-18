@@ -287,8 +287,8 @@ const data =
 
                             comments[blogId].appendChild(comment);
                             
-                            //replies.innerText = blog.replies.length;
-                                localStorage.setItem('comments', JSON.stringify(data));
+                            replies.innerHTML = `Replies <span class="rep-span">${blog.replies.length}</span> `;
+                            localStorage.setItem('comments', JSON.stringify(data));
                             saveComments();
 
                             
