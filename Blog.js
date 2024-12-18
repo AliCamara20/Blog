@@ -152,7 +152,8 @@ const data =
             likeBtn.addEventListener( 'click', function(){
                 
                 element.liked = !element.liked;
-                likeBtn.innerText = element.liked ?  '✔ Liked' : 'Like'
+                likeBtn.innerText = element.liked ?  '✔ Liked' : 'Like';
+                localStorage.setItem('comments', JSON.stringify(data))    
                 saveComments();
             })
 
@@ -287,6 +288,7 @@ const data =
                             comments[blogId].appendChild(comment);
                             
                             //replies.innerText = blog.replies.length;
+                                localStorage.setItem('comments', JSON.stringify(data));
                             saveComments();
 
                             
