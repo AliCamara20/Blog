@@ -132,7 +132,7 @@ const data =
             <div class ='container'>
                 <h3>${element.title.toUpperCase()}</h3>
                 <h5>${element.titleDesc}</h5>
-                <img src='${element.img}' alt="" class = 'blog_img'>
+                <img src='${element.img}' alt="" class = 'blog_img' width = '700' height = '700'>
                 <p>${element.about}</p>
                 <div class="buttons">
                     <button class="likeBtn" id = ${likeId} ><i class="fa-solid fa-thumbs-up"></i>Like</button>
