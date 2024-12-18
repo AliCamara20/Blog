@@ -294,7 +294,12 @@ textarea{
     .reply h4{
         margin-top: 0;
     }
-    
+
+    .info{
+        background: #000;
+        padding: 1.3em 1em;
+        color: #fff;
+    }
 
 
 }
