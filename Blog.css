@@ -271,7 +271,39 @@ textarea{
 .info_about{
     line-height: 1.5;
 }
+.posts{
+    background-color: #fff;
+    margin-top: 2.5em;
+ }
+.section_header{
+    background-color: black;
+    color: #fff;
+    padding: 1em;
+    
+}
+ .section_title{
+    letter-spacing: 2px;
+ }
+.posts_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+.post_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    column-gap: 20px ;
+}
+
+.post_img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    
+}
 
 @media (min-width: 800px){
     .hero_text .name_tag{
