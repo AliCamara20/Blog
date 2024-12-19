@@ -304,6 +304,44 @@ textarea{
     object-fit: cover;
     
 }
+.posts, .adverts, .tags{
+    background-color: #fff;
+    margin-top: 2.5em;
+}
+
+.advert_section{ 
+    padding: 1em; 
+}
+
+.advert_box{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 50vh;
+}
+.advert_box p{
+    font-size: clamp(1.1rem, .875rem + 1vw, 1.3rem);
+}
+
+.tag_box{
+   padding: 0 1em;
+}
+
+.tag{
+    background-color: #eee;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: .5em 0;
+    font-size: .7rem;
+
+}
+
+.active{
+    background-color: black;
+    color: #fff;
+}
 
 @media (min-width: 800px){
     .hero_text .name_tag{
