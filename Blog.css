@@ -275,7 +275,7 @@ textarea{
     line-height: 1.5;
     font-size: clamp(1rem, .875rem + 1vw, 1.2rem)
 }
-}
+
 
 .section_header{
     background-color: black;
@@ -544,4 +544,4 @@ footer .top_box{
 
 
 }
-}
+
