@@ -271,10 +271,7 @@ textarea{
 .info_about{
     line-height: 1.5;
 }
-.posts{
-    background-color: #fff;
-    margin-top: 2.5em;
- }
+
 .posts, .adverts, .tags, .inspirations, .follow, .subscribe{
     background-color: #fff;
     margin-top: 2.5em;
@@ -282,7 +279,7 @@ textarea{
 .section_header{
     background-color: black;
     color: #fff;
-    padding: 1em;
+    padding: .5em  1em;
     
 }
  .section_title{
@@ -368,7 +365,7 @@ textarea{
     padding: 1em;
 }
 .follow_box i{
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 .follow_box i:hover{
     opacity: .7;
