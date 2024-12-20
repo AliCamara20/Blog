@@ -343,6 +343,98 @@ textarea{
     color: #fff;
 }
 
+.inspirations{
+    display: grid;
+    
+}
+.inspiration_imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1em;
+    gap: 10px;
+    
+    
+}
+.insp_img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   
+}
+
+.follow_box{
+    padding: 1em;
+}
+.follow_box i{
+    font-size: 1.4em;
+}
+.follow_box i:hover{
+    opacity: .7;
+}
+.follow_box i:not(i:first-child){
+    margin-left: .3em;
+}
+
+#subscription_form{
+    padding: 1em;
+}
+.sub_info{
+    font-size: 1rem;
+}
+#subscription_form input{
+   display: block;
+   width: 100%;
+   padding: .6em 1em;
+   margin-bottom: 1em;
+   border: 1px solid rgb(0, 0, 0, .2);
+   font-size: 1rem;
+}
+
+#subscription_form input[type = 'submit']{
+    background-color:#FF5733;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    background-color: #777;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+footer h4, footer a{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: .9rem;
+}
+
+footer .top_box{
+    background-color: #000;
+    display: inline-block;
+    padding: 0 1em;
+    
+}
+.top_box a{
+    text-decoration: none;
+    display: block;
+    
+}
+
+.top_box a h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+.top_box a h4 svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-right: .5em;
+}
+
 @media (min-width: 800px){
     .hero_text .name_tag{
         font-size: 3rem;
