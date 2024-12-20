@@ -131,8 +131,9 @@ header{
 }
 .blog p{
     text-align: left;
-    font-size: clamp(1rem, .875rem + 1vw, 1.2rem);
+    font-size: clamp(1rem, .875rem + 1vw, 1rem);
     line-height: 1.5;
+    word-spacing: 3px;
 }
 .buttons{
     display: flex;
@@ -144,7 +145,8 @@ header{
     padding: .3em 1em;
     background-color: transparent;
     border: 1px solid #000;
-    font-size: 30px;
+    display: block;
+   
 }
 
 .replies{
@@ -162,7 +164,7 @@ header{
 }
 
 .buttons button{
-    font-size: clamp(1rem, .875rem + 1vw, 2rem)
+    font-size: clamp(1rem, .875rem + 1vw, 1rem)
 }
 
 .comments{
@@ -273,7 +275,7 @@ textarea{
 }
 .info_about{
     line-height: 1.5;
-    font-size: clamp(1rem, .875rem + 1vw, 1.2rem)
+    font-size: clamp(1rem, .875rem + 1vw, 1rem)
 }
 
 
