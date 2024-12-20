@@ -120,7 +120,7 @@ header{
 .blog{
     background-color: #fff;
     text-align: center;
-    padding: 3em 0;
+    padding: 1em 0;
 }
 
 .blog + .blog{
@@ -275,6 +275,10 @@ textarea{
     background-color: #fff;
     margin-top: 2.5em;
  }
+.posts, .adverts, .tags, .inspirations, .follow, .subscribe{
+    background-color: #fff;
+    margin-top: 2.5em;
+}
 .section_header{
     background-color: black;
     color: #fff;
@@ -304,10 +308,7 @@ textarea{
     object-fit: cover;
     
 }
-.posts, .adverts, .tags{
-    background-color: #fff;
-    margin-top: 2.5em;
-}
+
 
 .advert_section{ 
     padding: 1em; 
