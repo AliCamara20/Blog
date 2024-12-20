@@ -304,6 +304,16 @@ const data =
          close_btn.addEventListener('click', () =>{
                  comment_box.style.display = 'none';
          })
+         function closeModal(){
+        subscription_modal.style.display = 'none'
+       }
+
+       window.addEventListener('click', e => {
+        if(e.target === subscription_modal){
+           subscription_modal.style.display = 'none'
+                    
+        }
+       })
         function formatTme(date){
             date  = new Date();
             let day = date.toDateString();
