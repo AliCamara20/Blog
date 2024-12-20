@@ -272,14 +272,10 @@ textarea{
     line-height: 1.5;
 }
 
-.posts, .adverts, .tags, .inspirations, .follow, .subscribe{
-    background-color: #fff;
-    margin-top: 2.5em;
-}
 .section_header{
     background-color: black;
     color: #fff;
-    padding: .5em  1em;
+    padding: .5em 1em;
     
 }
  .section_title{
@@ -297,6 +293,11 @@ textarea{
     align-items: center;
     padding: 1em;
     column-gap: 20px ;
+    border-bottom: 1px solid #eee;
+}
+
+.post_item:hover{
+    background-color: #ccc;
 }
 
 .post_img{
@@ -305,10 +306,22 @@ textarea{
     object-fit: cover;
     
 }
+
+.post_title{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
 .post_body{
     font-size: 1rem;
-}
+    margin-top: 0;
 
+
+    
+}
+.posts, .adverts, .tags, .inspirations, .follow, .subscribe{
+    background-color: #fff;
+    margin-top: 2.5em;
+}
 
 .advert_section{ 
     padding: 1em; 
@@ -335,7 +348,7 @@ textarea{
     display: inline-block;
     padding: .5em 1em;
     margin: .5em 0;
-    font-size: 1rem;
+    font-size: .7rem;
 
 }
 
@@ -343,7 +356,6 @@ textarea{
     background-color: black;
     color: #fff;
 }
-
 .inspirations{
     display: grid;
     
@@ -383,6 +395,8 @@ textarea{
 .sub_info{
     font-size: 1rem;
 }
+
+
 #subscription_form input{
    display: block;
    width: 100%;
@@ -396,6 +410,10 @@ textarea{
     background-color:#FF5733;
     color: #fff;
     border: none;
+}
+#subscription_form input[type = 'submit']:hover{
+    background-color: #eee;
+    color: #000;
 }
 
 footer {
@@ -434,6 +452,46 @@ footer .top_box{
     height: 20px;
     fill: #fff;
     margin-right: .5em;
+}
+.sub-modalContainer{
+    background-color: rgb(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sub_form{
+    background-color: white;
+    animation: scaleUp .5s ease ;
+    
+}
+
+@keyframes scaleUp {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#close{
+    font-size: 2.5rem;
+    display: block;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width: 800px){
