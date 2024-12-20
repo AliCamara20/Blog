@@ -305,6 +305,9 @@ textarea{
     object-fit: cover;
     
 }
+.post_body{
+    font-size: 1rem;
+}
 
 
 .advert_section{ 
