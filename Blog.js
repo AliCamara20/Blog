@@ -314,6 +314,18 @@ const data =
                     
         }
        })
+       function closeModal(){
+                subscription_modal.style.display = 'none'
+       }
+
+       
+
+       function openModal(e){
+                e.preventDefault();
+                subscription_modal.style.display = 'flex';
+                subscription_modal.style.justifyContent = 'center';
+                subscription_modal.style.alignItems = 'center';
+       }
         function formatTme(date){
             date  = new Date();
             let day = date.toDateString();
